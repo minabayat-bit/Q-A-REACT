@@ -21,7 +21,7 @@ const toggleCard = (index: number) => {
             do you accept all major credit cards?
           </h2>
           <button 
-          onClick={() => toggleCard(0)} >
+          onClick={() => toggleCard(0)} className="text-[#c59d5f] text-[25px] border-2 border-[#c59d5f] " >
             {openIndex === 0 ? "-" : "+"}
           </button>
         </div>
