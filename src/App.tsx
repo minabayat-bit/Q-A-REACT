@@ -14,10 +14,11 @@ function App() {
       <span className="text-[#c59d5f] text-4xl font-light tracking-wider">
         General Questions
       </span>
+      
 
-      <Cards/>
-      <Cards />
-      <Cards />
+      <Cards title="do you accept all major credit cards?"/>
+      <Cards title="do you suppport local farmers?" />
+      <Cards title="do you use organic ingredients?" />
     </div>
   );
 }
