@@ -5,9 +5,9 @@ import "./index.css";
 
 function App()  {
 
-const [openIdex, setOpenIdex] = useState<number | null : index>(null);
+const [openIndex, setOpenIndex] = useState<number | null>(null);
 const toggleCard = (index: number) => {
-  setOpenIdex(openIdex === index ? null : index);
+  setOpenIndex(openIndex === index ? null : index);
 };
 
   return (
@@ -20,16 +20,19 @@ const toggleCard = (index: number) => {
           <h2 >
             do you accept all major credit cards?
           </h2>
-          <button >
-            +
+          <button 
+          onClick={() => toggleCard(0)} >
+            {openIndex === 0 ? "-" : "+"}
           </button>
         </div>
         <div ></div>
+        {openIndex === 0 && (
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolore
           illo dolores quia nemo doloribus quaerat, magni numquam repellat
           reprehenderit.
         </p>
+        )}
       </Cards>
     </div>
   );
